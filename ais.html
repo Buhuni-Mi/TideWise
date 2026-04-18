@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Action Impact Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .sim-hero {
+        padding: 2rem;
+        border-radius: 24px;
+        background-image:
+          linear-gradient(
+            135deg,
+            rgba(8, 126, 139, 0.48),
+            rgba(255, 127, 80, 0.18)
+          ),
+          url("images/impact-low.jpg");
+        color: var(--white);
+      }
+      .sim-hero .card {
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--ink);
+      }
+      .action-card {
+        background: white;
+        border-radius: 18px;
+        padding: 1rem;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared site header used across the group project -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a class="" href="home.html">Home</a></li>
+            <li><a class="" href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="ais.html">Action Simulator</a></li>
+            <li><a class="" href="feedback.html">Feedback</a></li>
+            <li><a class="" href="team.html">Team</a></li>
+            <li><a class="" href="profile.html">Profile</a></li>
+            <li><a class="" href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Action cards are listed below. Users can select them to change the score and feedback. -->
+
+    <main id="main" class="container">
+      <section class="hero sim-hero">
+        <h1>Action Impact Simulator</h1>
+        <p>
+          Select the actions you already do or plan to do. The simulator adds
+          your impact points and shows a matching environmental outcome.
+        </p>
+        <div class="card">
+          <p><strong>Total score:</strong> <span id="score">0</span></p>
+          <div class="progress">
+            <div class="progress-bar" id="scoreBar"></div>
+          </div>
+          <p id="impactLabel" class="highlight">
+            Current impact level: Low impact
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Choose your actions</h2>
+        <div class="action-grid">
+          <article tabindex="0" class="action-card" data-points="2">
+            <h3>Reusable water bottle</h3>
+            <p>
+              Carry a bottle instead of buying drinks in disposable containers.
+            </p>
+            <p><strong>2 points</strong></p>
+          </article>
+          <article tabindex="0" class="action-card" data-points="5">
+            <h3>Monthly beach cleanup</h3>
+            <p>Join or help organise one cleanup event each month.</p>
+            <p><strong>5 points</strong></p>
+          </article>
+          <article tabindex="0" class="action-card" data-points="3">
+            <h3>Refuse plastic bags</h3>
+            <p>Use a reusable bag for shopping and everyday carrying.</p>
+            <p><strong>3 points</strong></p>
+          </article>
+          <article tabindex="0" class="action-card" data-points="3">
+            <h3>Sort recyclables correctly</h3>
+            <p>
+              Separate materials properly so less waste ends up in the wrong
+              stream.
+            </p>
+            <p><strong>3 points</strong></p>
+          </article>
+          <article tabindex="0" class="action-card" data-points="2">
+            <h3>Educate a friend</h3>
+            <p>Share one useful marine protection habit with someone else.</p>
+            <p><strong>2 points</strong></p>
+          </article>
+          <article tabindex="0" class="action-card" data-points="4">
+            <h3>Report litter hotspots</h3>
+            <p>
+              Notify a local group or community organisation about polluted
+              areas.
+            </p>
+            <p><strong>4 points</strong></p>
+          </article>
+        </div>
+      </section>
+      <section class="section impact-grid">
+        <h2>Impact levels</h2>
+        <article class="card">
+          <h3>Low impact</h3>
+          <p>
+            Some awareness exists, but actions are still limited and
+            inconsistent.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Medium impact</h3>
+          <p>
+            Good habits are developing and visible improvements are possible.
+          </p>
+        </article>
+        <article class="card">
+          <h3>High impact</h3>
+          <p>
+            Consistent effort can influence others and produce stronger local
+            outcomes.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>About this page</h3>
+          <p>
+            This page is part of the TideWise group website on sustainable ocean
+            action, beach cleanups, and marine awareness.
+          </p>
+          <p>
+            <a href="pageEditor_ST2.html">Page Editor</a> |
+            <a href="validation_ST2.html">Validation Page</a>
+          </p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>Student 2: M.A. Buhuni | w2181476</p>
+          <p class="small">
+            Accessibility: semantic headings, keyboard support, readable
+            contrast, descriptive links, and responsive layout.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/ais.js"></script>
+  </body>
+</html>

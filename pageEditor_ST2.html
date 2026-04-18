@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Page Editor ST2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+  </head>
+  <body class="report-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="ais.html">Action Simulator</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="stud">
+      <h1>Page Editor - M.A. Buhuni</h1>
+      <p><strong>Team:</strong> TideWise</p>
+      <p><strong>Student ID:</strong> w2181476</p>
+      <p><strong>Role:</strong> Student 2 - Splash screen, Action Impact Simulator, Content page</p>
+    </section>
+
+    <div class="report-layout">
+      <main id="main" class="report-main">
+        <section id="splash" class="report-section">
+          <h2>Splash Screen</h2>
+          <h3>Technical Description</h3>
+          <p>I designed the splash page as a short introduction rather than a complex landing page. It includes the title, group names, background image, a loader, a countdown, and a skip button. I kept it visually similar to the rest of the site even though this page does not use the shared template.</p>
+          <p>The automatic redirect is handled with a meta refresh tag, while the countdown text is updated with JavaScript. I used a simple full-screen layout and overlay styling to keep the text readable over the image.</p>
+          <h3>Accessibility</h3>
+          <p>I made sure the text stays readable on top of the background image by using contrast and spacing. The page also includes a direct skip link to `home.html` so users are not forced to wait for the redirect.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST2.html#splash-val">Jump to the Splash Screen validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="splash.html" target="_blank" rel="noopener">Open `splash.html` in a new tab.</a></p>
+        </section>
+
+        <section id="ais" class="report-section">
+          <h2>Action Impact Simulator</h2>
+          <h3>Technical Description</h3>
+          <p>The AIS page includes six action cards, each with points. JavaScript tracks the selected cards, adds the score, updates the summary, and changes the background image depending on the impact level. I kept the rules simple so the interaction is easy to explain in the demo.</p>
+          <p>I used HTML cards for the actions, embedded CSS for page-specific layout, and JavaScript for score calculation and feedback. The selected state is clear so users can see which actions are currently counted.</p>
+          <h3>Accessibility</h3>
+          <p>The action cards can receive keyboard focus, the score updates are visible in text, and the interactive states are clear enough that users can tell when a choice has been applied. I also kept the headings and score label easy to scan.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST2.html#ais-val">Jump to the Action Impact Simulator validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="ais.html" target="_blank" rel="noopener">Open `ais.html` in a new tab.</a></p>
+        </section>
+
+        <section id="content_ST2" class="report-section">
+          <h2>Content Page</h2>
+          <h3>Technical Description</h3>
+          <p>My content page is about plastic reduction habits for students. I focused on realistic habits that people can actually follow, so the writing stays practical instead of sounding too general.</p>
+          <p>I used section headings, internal links, a contents area, and supporting images. The page follows the same structure as the other content pages so the site feels unified.</p>
+          <h3>Accessibility</h3>
+          <p>The page uses a clear heading structure, descriptive alt text, and internal links that help readers move directly to the topic they need. The layout also separates the contents area from the reading area to reduce clutter.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST2.html#content_ST2-val">Jump to the Content Page validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="content_ST2.html" target="_blank" rel="noopener">Open `content_ST2.html` in a new tab.</a></p>
+        </section>
+
+        <section id="challenges" class="report-section">
+          <h2>Challenges and Lessons Learned</h2>
+          <p>The AIS page was the main challenge because it needed to look interactive without becoming too complicated. I also had to make sure the background changes did not reduce readability. I solved that by keeping the content area in cards and using only three simple impact levels.</p>
+        </section>
+
+        <section id="accessibility" class="report-section">
+          <h2>Accessibility Considerations</h2>
+          <p>My pages use accessibility in slightly different ways. On the splash screen, I made sure the text stays readable on top of the background image by using contrast and spacing. On the AIS page, I added clear focus and selected states so users can understand the interaction. On the content page, I kept headings and section links straightforward so the page is easier to navigate.</p>
+        </section>
+
+        <section id="janet" class="report-section">
+          <h2>Compliance</h2>
+          <p>On my pages, responsible publishing meant keeping the interactive content honest and suitable for an educational site. I did not include exaggerated statistics or inappropriate media. I also used simple original wording for the action cards and made sure image use was relevant to the SDG topic rather than decorative only.</p>
+        </section>
+
+        <section id="meetings" class="report-section">
+          <h2>Group Meetings and Individual Contribution Log</h2>
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Format</th>
+                <th>Objective</th>
+                <th>Attendance</th>
+                <th>My contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>08 Feb 2026</td><td>3:30 PM</td><td>Face-to-face</td><td>Agree on SDG topic, team name, and initial roles</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Helped define the short message for the splash page and agreed that it should redirect after four seconds.</td></tr>
+              <tr><td>2</td><td>12 Feb 2026</td><td>8:30 PM</td><td>Online / WhatsApp</td><td>Discuss colour palette, page ideas, and shared style</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Suggested keeping the intro page short so it would not feel separate from the main site.</td></tr>
+              <tr><td>3</td><td>17 Feb 2026</td><td>4:00 PM</td><td>Face-to-face</td><td>Review layout sketches and page requirements</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Planned the six AIS action cards and the point values for each one.</td></tr>
+              <tr><td>4</td><td>24 Feb 2026</td><td>9:00 PM</td><td>Online / WhatsApp</td><td>Plan content sections, images, and section flow</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Adjusted the impact ranges and checked that the score changed correctly when cards were selected.</td></tr>
+              <tr><td>5</td><td>03 Mar 2026</td><td>3:00 PM</td><td>Face-to-face</td><td>Check progress on HTML, CSS, and JavaScript features</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Improved the wording on the plastic reduction content page so it sounded simpler and more realistic.</td></tr>
+              <tr><td>6</td><td>10 Mar 2026</td><td>8:00 PM</td><td>Hybrid</td><td>Review validation, accessibility, and page editor notes</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Cross-checked the links between my page editor and validation sections.</td></tr>
+              <tr><td>7</td><td>17 Mar 2026</td><td>4:15 PM</td><td>Face-to-face</td><td>Final review, fixes, and demo preparation</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Reviewed the final AIS interaction so I could explain it properly in the presentation.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="references" class="report-section">
+          <h2>References</h2>
+          <ul class="ref-list">
+            <li>W3C (2026) HTML Validator and CSS Validator guidance used during final checking.</li>
+            <li>University lecture notes and Blackboard guidance used for page structure, accessibility, and validation expectations.</li>
+            <li>Royalty-free images collected and stored locally in the website `images` folder for educational use in the project.</li>
+          </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+      </main>
+
+      <aside class="report-nav">
+        <h2>Core Pages</h2>
+        <ul>
+          <li><a href="#splash">Splash screen</a></li>
+          <li><a href="#ais">Action Impact Simulator</a></li>
+          <li><a href="#content_ST2">Content page</a></li>
+          <li><a href="#challenges">Challenges and lessons learned</a></li>
+          <li><a href="#accessibility">Accessibility considerations</a></li>
+          <li><a href="#janet">Compliance</a></li>
+          <li><a href="#meetings">Meetings and contribution log</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>Report links</h3>
+          <p><a href="pageEditor_ST2.html">Page Editor</a> | <a href="validation_ST2.html">Validation Page</a></p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>M.A. Buhuni | w2181476</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

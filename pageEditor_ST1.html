@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Page Editor ST1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+  </head>
+  <body class="report-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="ais.html">Action Simulator</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="stud">
+      <h1>Page Editor - T.T. Mutukutti</h1>
+      <p><strong>Team:</strong> TideWise</p>
+      <p><strong>Student ID:</strong> w2181482</p>
+      <p><strong>Role:</strong> Student 1 - Shared template, Home page, Gallery, Content page</p>
+    </section>
+
+    <div class="report-layout">
+      <main id="main" class="report-main">
+        <section id="home" class="report-section">
+          <h2>Home Page</h2>
+          <h3>Technical Description</h3>
+          <p>I used the shared template so the header, navigation, and footer stayed consistent with the rest of the site. Inside the main section, I arranged the mission content into clear cards and added links to all four content pages so users can understand the site quickly.</p>
+          <p>The structure mainly uses `header`, `nav`, `main`, `section`, `article`, and `footer`. For styling, I reused the global card styles and added a small embedded style block for home-page-only emphasis so the shared stylesheet stayed clean.</p>
+          <h3>Accessibility</h3>
+          <p>I used clear heading order, strong colour contrast, a skip link, and visible focus styles. The hero and mission sections were kept short and readable, which helps keyboard and screen-reader users move through the page more easily.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST1.html#home-val">Jump to the Home Page validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="home.html" target="_blank" rel="noopener">Open `home.html` in a new tab.</a></p>
+        </section>
+
+        <section id="gallery" class="report-section">
+          <h2>Gallery Page</h2>
+          <h3>Technical Description</h3>
+          <p>For the gallery, I kept the layout simple: four thumbnails, a title for each item, and a modal-style extended view. JavaScript opens the correct image, inserts the matching text, closes the panel, and applies the temporary theme and font changes inside the expanded view.</p>
+          <p>I used a thumbnail grid in HTML and linked it to DOM event listeners in JavaScript. Hover and focus feedback make it obvious that the images are interactive.</p>
+          <h3>Accessibility</h3>
+          <p>The images use descriptive alt text, the close button is easy to find, and keyboard focus remains visible when the modal controls are used. I also kept the text in the expanded view readable instead of relying on the image alone.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST1.html#gallery-val">Jump to the Gallery validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="gallery.html" target="_blank" rel="noopener">Open `gallery.html` in a new tab.</a></p>
+        </section>
+
+        <section id="content_ST1" class="report-section">
+          <h2>Content Page</h2>
+          <h3>Technical Description</h3>
+          <p>My content page focuses on beach cleanups. I split the page into several sections with internal anchor links because the page is longer than one screen, and I added a visible go-to-top link and supporting images.</p>
+          <p>The content is organised with one `h1` and multiple `h2` sections. The layout uses a side contents area and a main reading area so the page is easier to scan.</p>
+          <h3>Accessibility</h3>
+          <p>I used descriptive image alt text, clear section headings, and internal links that help users jump directly to the relevant topic. The reading layout also reduces long uninterrupted text blocks.</p>
+          <h3>Link to the Validation Page</h3>
+          <p><a href="validation_ST1.html#content_ST1-val">Jump to the Content Page validation evidence.</a></p>
+          <h3>Link to the Live Page</h3>
+          <p><a href="content_ST1.html" target="_blank" rel="noopener">Open `content_ST1.html` in a new tab.</a></p>
+        </section>
+
+        <section id="challenges" class="report-section">
+          <h2>Challenges and Lessons Learned</h2>
+          <p>The hardest part for me was making the shared layout reusable for everyone else without making it too rigid. The gallery also needed JavaScript interaction, but I did not want it to feel over-designed. I solved this by keeping the page structure simple and then adding only the required interactive parts.</p>
+        </section>
+
+        <section id="accessibility" class="report-section">
+          <h2>Accessibility Considerations</h2>
+          <p>Because I handled the template and two visual pages, I focused most on structure and navigation clarity. I used alt text on images, clear headings, strong colour contrast in the navigation, and visible hover and focus states so users can tell what is clickable. On the gallery page, the close button and image controls were kept obvious so users are not trapped inside the expanded view.</p>
+        </section>
+
+        <section id="janet" class="report-section">
+          <h2>Compliance</h2>
+          <p>For my pages, JANET compliance mainly meant using appropriate educational content, avoiding misleading claims, and making sure all media and ideas used in the site stayed relevant to the project. I kept the homepage wording original instead of copying content from the UN website and used locally stored files rather than embedding random third-party content.</p>
+        </section>
+
+        <section id="meetings" class="report-section">
+          <h2>Group Meetings and Individual Contribution Log</h2>
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Format</th>
+                <th>Objective</th>
+                <th>Attendance</th>
+                <th>My contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>08 Feb 2026</td><td>3:30 PM</td><td>Face-to-face</td><td>Agree on SDG topic, team name, and initial roles</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Agreed to handle the shared template and suggested keeping the layout clean so the whole site would feel consistent.</td></tr>
+              <tr><td>2</td><td>12 Feb 2026</td><td>8:30 PM</td><td>Online / WhatsApp</td><td>Discuss colour palette, page ideas, and shared style</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Proposed the ocean-blue and teal colour palette and suggested a card-based homepage structure.</td></tr>
+              <tr><td>3</td><td>17 Feb 2026</td><td>4:00 PM</td><td>Face-to-face</td><td>Review layout sketches and page requirements</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Explained how the shared navigation and active page style should work for each student.</td></tr>
+              <tr><td>4</td><td>24 Feb 2026</td><td>9:00 PM</td><td>Online / WhatsApp</td><td>Plan content sections, images, and section flow</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Updated the homepage content blocks and linked the content pages from the main entry page.</td></tr>
+              <tr><td>5</td><td>03 Mar 2026</td><td>3:00 PM</td><td>Face-to-face</td><td>Check progress on HTML, CSS, and JavaScript features</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Checked the gallery interaction and made small fixes to spacing and image labels.</td></tr>
+              <tr><td>6</td><td>10 Mar 2026</td><td>8:00 PM</td><td>Hybrid</td><td>Review validation, accessibility, and page editor notes</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Reviewed my page editor notes and linked each explanation to the correct validation section.</td></tr>
+              <tr><td>7</td><td>17 Mar 2026</td><td>4:15 PM</td><td>Face-to-face</td><td>Final review, fixes, and demo preparation</td><td>T.T. Mutukutti, M.A. Buhuni, Insaaf Mansoor, Kalaithevan Mahadevan</td><td>Did one final check on the shared template before the group ZIP was prepared.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="references" class="report-section">
+          <h2>References</h2>
+          <ul class="ref-list">
+            <li>W3C (2026) HTML Validator and CSS Validator guidance used during final checking.</li>
+            <li>University lecture notes and Blackboard guidance used for page structure, accessibility, and validation expectations.</li>
+            <li>Royalty-free images collected and stored locally in the website `images` folder for educational use in the project.</li>
+          </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+      </main>
+
+      <aside class="report-nav">
+        <h2>Core Pages</h2>
+        <ul>
+          <li><a href="#home">Home page</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#content_ST1">Content page</a></li>
+          <li><a href="#challenges">Challenges and lessons learned</a></li>
+          <li><a href="#accessibility">Accessibility considerations</a></li>
+          <li><a href="#janet">Compliance</a></li>
+          <li><a href="#meetings">Meetings and contribution log</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>Report links</h3>
+          <p><a href="pageEditor_ST1.html">Page Editor</a> | <a href="validation_ST1.html">Validation Page</a></p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>T.T. Mutukutti | w2181482</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared site header used across the group project -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a class="" href="home.html">Home</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a class="" href="ais.html">Action Simulator</a></li>
+            <li><a class="" href="feedback.html">Feedback</a></li>
+            <li><a class="" href="team.html">Team</a></li>
+            <li><a class="" href="profile.html">Profile</a></li>
+            <li><a class="" href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Gallery items are loaded here. JS handles the expanded view. -->
+
+    <main id="main" class="container">
+      <section class="hero">
+        <h1>Interactive gallery</h1>
+        <p>
+          These visuals represent the need for coastal cleanup, plastic
+          reduction, wildlife protection, and student volunteering.
+        </p>
+      </section>
+      <div class="gallery-grid">
+        <button
+          class="thumb focus-outline"
+          data-title="Beach cleanup in action"
+          data-text="Beach cleanup events combine direct waste removal with public awareness. They also help students see the scale and type of litter found on coastlines."
+          data-img="images/gallery-1.jpg"
+        >
+          <img
+            src="images/gallery-1.jpg"
+            alt="Students collecting waste during a beach cleanup"
+          ></button
+        ><button
+          class="thumb focus-outline"
+          data-title="Plastic waste pressure"
+          data-text="Single-use bottles, packaging, and containers remain major contributors to marine waste. Prevention is more effective than cleanup alone."
+          data-img="images/gallery-2.jpg"
+        >
+          <img
+            src="images/gallery-2.jpg"
+            alt="Plastic waste gathered along a shoreline"
+          ></button
+        ><button
+          class="thumb focus-outline"
+          data-title="Marine wildlife at risk"
+          data-text="Wildlife is affected by plastic ingestion, entanglement, and habitat disruption. Cleaner coasts support healthier ecosystems."
+          data-img="images/gallery-3.jpg"
+        >
+          <img
+            src="images/gallery-3.jpg"
+            alt="Marine life in coastal waters"
+          ></button
+        ><button
+          class="thumb focus-outline"
+          data-title="Volunteers create momentum"
+          data-text="Student volunteers can shape attitudes, improve local areas, and encourage wider participation through visible action."
+          data-img="images/gallery-4.jpg"
+        >
+          <img
+            src="images/gallery-4.jpg"
+            alt="Community volunteers working together near the beach"
+          >
+        </button>
+      </div>
+    </main>
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-panel">
+        <div class="modal-body">
+          <div class="modal-image">
+            <img
+              id="modalImg"
+              src="images/gallery-1.jpg"
+              alt="Expanded gallery image"
+            >
+          </div>
+          <div class="modal-copy">
+            <button id="closeModal" class="secondary">Close</button>
+            <h2 id="modalTitle">Title</h2>
+            <p id="modalText"></p>
+            <p>
+              <button id="themeToggle">Change colour scheme</button>
+              <button id="fontToggle" class="secondary">
+                Change font style
+              </button>
+            </p>
+            <p class="small">
+              This expanded view uses JavaScript controls, including close
+              functionality and style changes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>About this page</h3>
+          <p>
+            This page is part of the TideWise group website on sustainable ocean
+            action, beach cleanups, and marine awareness.
+          </p>
+          <p>
+            <a href="pageEditor_ST1.html">Page Editor</a> |
+            <a href="validation_ST1.html">Validation Page</a>
+          </p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>Student 1: T.T. Mutukutti | w2181482</p>
+          <p class="small">
+            Accessibility: semantic headings, keyboard support, readable
+            contrast, descriptive links, and responsive layout.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

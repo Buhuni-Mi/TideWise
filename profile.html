@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Profile</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Shared site header used across the group project -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a class="" href="home.html">Home</a></li>
+            <li><a class="" href="gallery.html">Gallery</a></li>
+            <li><a class="" href="ais.html">Action Simulator</a></li>
+            <li><a class="" href="feedback.html">Feedback</a></li>
+            <li><a class="" href="team.html">Team</a></li>
+            <li><a class="active" href="profile.html">Profile</a></li>
+            <li><a class="" href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Student 4 profile page: prompts collect details step by step and update the page output. -->
+
+    <main id="main" class="container">
+      <section class="hero">
+        <div class="profile-banner" aria-hidden="true"></div>
+        <h1>Build your sustainability profile</h1>
+        <p>
+          This page uses JavaScript prompts instead of a regular HTML form.
+          Start the guided profile process and see your details update step by
+          step.
+        </p>
+        <p>
+          <button id="startProfile">Start profile prompts</button>
+          <button id="resumeSkipped" class="secondary">
+            Return to skipped steps
+          </button>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Progress</h2>
+        <div class="progress">
+          <div class="progress-bar" id="profileBar"></div>
+        </div>
+        <p id="profileProgress">0% completed</p>
+      </section>
+
+      <div class="section profile-grid">
+        <article class="profile-box">
+          <h2>Basic details</h2>
+          <div id="basicDetails">
+            <p>No details added yet.</p>
+          </div>
+        </article>
+
+        <article class="profile-box">
+          <h2>Interests</h2>
+          <div id="interestDetails">
+            <p>No interests added yet.</p>
+          </div>
+        </article>
+
+        <article class="profile-box">
+          <h2>Commitments</h2>
+          <div id="commitmentDetails">
+            <p>No commitments added yet.</p>
+          </div>
+        </article>
+
+        <article class="profile-box">
+          <h2>Profile summary</h2>
+          <div id="summaryBox">
+            <p>Your personalised ocean-friendly profile will appear here.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>About this page</h3>
+          <p>
+            This page is part of the TideWise group website on sustainable ocean
+            action, beach cleanups, and marine awareness.
+          </p>
+          <p>
+            <a href="pageEditor_ST4.html">Page Editor</a> |
+            <a href="validation_ST4.html">Validation Page</a>
+          </p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>Student 4: Kalaithevan Mahadevan | w2181458</p>
+          <p class="small">
+            Accessibility: semantic headings, keyboard support, readable
+            contrast, descriptive links, and responsive layout.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>

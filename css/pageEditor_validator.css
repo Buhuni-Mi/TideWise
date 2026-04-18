@@ -1,0 +1,157 @@
+body.report-page {
+  margin: 0;
+}
+
+.stud {
+  max-width: 1180px;
+  margin: 1rem auto 0;
+  padding: 1.25rem 1rem;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(8, 126, 139, 0.14), rgba(11, 57, 84, 0.08));
+}
+
+.stud h1,
+.stud h2 {
+  margin: 0 0 0.45rem;
+}
+
+.stud p {
+  margin: 0.2rem 0;
+}
+
+.report-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 1.25rem;
+  max-width: 1180px;
+  margin: 1.25rem auto 0;
+  padding: 0 1rem 2rem;
+  align-items: start;
+}
+
+.report-main {
+  min-width: 0;
+}
+
+.report-section {
+  margin-bottom: 1.25rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(8, 126, 139, 0.18);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(11, 57, 84, 0.08);
+}
+
+.report-section h2 {
+  margin-top: 0;
+}
+
+.report-section h3 {
+  margin-bottom: 0.45rem;
+}
+
+.report-section p,
+.report-section li {
+  line-height: 1.7;
+}
+
+.report-nav {
+  position: sticky;
+  top: 96px;
+  padding: 1.1rem;
+  border: 1px solid rgba(8, 126, 139, 0.16);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 50px rgba(11, 57, 84, 0.08);
+}
+
+.report-nav h2 {
+  margin-top: 0;
+}
+
+.report-nav ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.report-nav li + li {
+  margin-top: 0.45rem;
+}
+
+.report-figure {
+  margin: 1rem 0 0;
+}
+
+.report-figure img {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  border: 1px solid rgba(8, 126, 139, 0.15);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.report-figure figcaption {
+  margin-top: 0.55rem;
+  color: #37525d;
+  font-size: 0.95rem;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+  padding: 0.75rem;
+  border: 1px solid rgba(8, 126, 139, 0.18);
+  vertical-align: top;
+  text-align: left;
+}
+
+.report-table thead th {
+  background: rgba(8, 126, 139, 0.1);
+}
+
+.ref-list li + li {
+  margin-top: 0.55rem;
+}
+
+.top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  margin: 0;
+}
+
+.top a {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: #0b3954;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top a:hover,
+.top a:focus-visible {
+  background: #087e8b;
+}
+
+@media (max-width: 920px) {
+  .report-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .report-nav {
+    position: static;
+    order: -1;
+  }
+
+  .top {
+    right: 0.8rem;
+    bottom: 0.8rem;
+  }
+}

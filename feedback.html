@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Shared site header used across the group project -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">TW</span>
+          <div>
+            <div>TideWise</div>
+            <div class="small">SDG 14: Life Below Water</div>
+          </div>
+        </div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a class="" href="home.html">Home</a></li>
+            <li><a class="" href="gallery.html">Gallery</a></li>
+            <li><a class="" href="ais.html">Action Simulator</a></li>
+            <li><a class="active" href="feedback.html">Feedback</a></li>
+            <li><a class="" href="team.html">Team</a></li>
+            <li><a class="" href="profile.html">Profile</a></li>
+            <li><a class="" href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Programmes, reviews, and the JS-enhanced feedback form are grouped below. -->
+
+    <main id="main" class="container">
+      <section class="hero">
+        <h1>Feedback and programme directory</h1>
+        <p>
+          Explore local-style programmes and share your thoughts about marine
+          awareness initiatives.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Programmes and opportunities</h2>
+        <div class="program-scroll">
+          <article class="program-card">
+            <h3>Weekend Beach Cleanup Drive</h3>
+            <p>
+              A recurring cleanup activity focused on visible litter removal and
+              basic waste sorting.
+            </p>
+            <span class="tag">Hands-on volunteering</span>
+          </article>
+          <article class="program-card">
+            <h3>Campus Plastic-Free Campaign</h3>
+            <p>
+              A student-led initiative encouraging reusable bottles, lunch
+              boxes, and less single-use plastic.
+            </p>
+            <span class="tag">Habit change</span>
+          </article>
+          <article class="program-card">
+            <h3>Youth Marine Awareness Workshop</h3>
+            <p>
+              Awareness sessions on marine pollution, biodiversity loss, and
+              practical ocean-friendly routines.
+            </p>
+            <span class="tag">Education</span>
+          </article>
+          <article class="program-card">
+            <h3>Coastal Volunteer Network</h3>
+            <p>
+              A collaborative programme linking schools, students, and local
+              communities for periodic action.
+            </p>
+            <span class="tag">Community action</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Recent reviews</h2>
+        <div class="card" style="margin-bottom: 1rem;">
+          <p><strong>Overall rating:</strong> 4.7/5 Excellent</p>
+          <p class="small">Based on 128 community reviews across student-led and local marine action programmes.</p>
+        </div>
+        <div class="grid-3">
+          <article class="review-card">
+            <h3>Very well organised</h3>
+            <p><strong>4.8/5</strong></p>
+            <p>"The beach cleanup event was organised clearly and made participation feel easy for first-time volunteers." <a href="#">See more</a></p>
+            <p class="small">Reviewed by N. Silva — 12 March 2026</p>
+          </article>
+          <article class="review-card">
+            <h3>Practical and useful</h3>
+            <p><strong>4.6/5</strong></p>
+            <p>"The awareness workshop was practical and not too theoretical. It showed what students can actually do." <a href="#">See more</a></p>
+            <p class="small">Reviewed by K. Perera — 15 March 2026</p>
+          </article>
+          <article class="review-card">
+            <h3>Good ideas for long-term action</h3>
+            <p><strong>4.7/5</strong></p>
+            <p>"The programme directory gave useful ideas for long-term involvement, not just one-day action." <a href="#">See more</a></p>
+            <p class="small">Reviewed by A. Rahman — 18 March 2026</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Submit your feedback</h2>
+          <form id="feedbackForm" novalidate>
+            <fieldset>
+              <legend>Contact details</legend>
+              <label for="name">Full name</label>
+              <input id="name" name="name" required>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+              <label for="phone">Telephone</label>
+              <input id="phone" name="phone" type="tel" required>
+              <label for="address">Address</label>
+              <input id="address" name="address" required>
+            </fieldset>
+
+            <fieldset>
+              <legend>Programme details</legend>
+              <label for="interest">Programme of interest</label>
+              <input list="programmes" id="interest" name="interest" required>
+              <datalist id="programmes">
+                <option value="Weekend Beach Cleanup Drive"></option>
+                <option value="Campus Plastic-Free Campaign"></option>
+                <option value="Youth Marine Awareness Workshop"></option>
+                <option value="Coastal Volunteer Network"></option>
+              </datalist>
+              <label for="visitdate">Preferred date</label>
+              <input id="visitdate" type="date" required>
+              <label for="visitdatetime">Preferred meeting time</label>
+              <input id="visitdatetime" type="datetime-local" required>
+            </fieldset>
+
+            <label for="message">Comment or message</label>
+            <textarea id="message" maxlength="250" required></textarea>
+            <p class="small">
+              Characters remaining: <span id="charCount">250</span>
+            </p>
+            <input type="submit" value="Send feedback">
+          </form>
+          <p id="formMsg"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h3>About this page</h3>
+          <p>
+            This page is part of the TideWise group website on sustainable ocean
+            action, beach cleanups, and marine awareness.
+          </p>
+          <p>
+            <a href="pageEditor_ST3.html">Page Editor</a> |
+            <a href="validation_ST3.html">Validation Page</a>
+          </p>
+        </div>
+        <div>
+          <h3>Student details</h3>
+          <p>Student 3: Insaaf Mansoor | w2181487</p>
+          <p class="small">
+            Accessibility: semantic headings, keyboard support, readable
+            contrast, descriptive links, and responsive layout.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+  </body>
+</html>

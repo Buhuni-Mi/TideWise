@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="4; url=home.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideWise | Splash</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .splash-center {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: 4rem 1rem;
+        text-align: center;
+      }
+      .member-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin: 1.5rem 0;
+      }
+      .member-item {
+        background: rgba(255, 255, 255, 0.14);
+        padding: 0.9rem;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="splash-shell">
+      <div class="splash-center">
+        <span class="badge">SDG 14 | Life Below Water</span>
+        <h1>TideWise</h1>
+        <p>Small coastal actions. Lasting ocean impact.</p>
+        <p>
+          TideWise helps students turn everyday choices into cleaner coasts and
+          healthier oceans through simple action and community support.
+        </p>
+        <div class="loader" aria-hidden="true"></div>
+        <p class="countdown">
+          Redirecting to home page in <span id="count">4</span> seconds
+        </p>
+        <div class="member-list">
+          <div class="member-item">T.T. Mutukutti<br>w2181482</div>
+          <div class="member-item">M.A. Buhuni<br>w2181476</div>
+          <div class="member-item">Insaaf Mansoor<br>w2181487</div>
+          <div class="member-item">Kalaithevan Mahadevan<br>w2181458</div>
+        </div>
+        <p><a class="button" href="home.html">Skip intro</a></p>
+      </div>
+    </main>
+    <script src="js/splash.js"></script>
+  </body>
+</html>
